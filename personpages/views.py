@@ -192,10 +192,10 @@ def indexPageView(request) :
 def aboutPageView(request) :
     return render(request, 'personpages/about.html')
 
-def analysisPageView(request) :
-    return render(request, 'personpages/post.html')
+def dataPageView(request) :
+    return render(request, 'personpages/data.html')
 
-def contactPageView(request) :
-    return render(request, 'personpages/contact.html')
+def displayPageView(request) :
+    return render(request, 'personpages/display.html')
 
 
