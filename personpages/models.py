@@ -14,5 +14,4 @@ class MissingPerson (models.Model) :
 def full_name(self):
     return '%s %s' % (self.first_name, self.last_name)
 def __str__(self):
-    return (self.full_name)  
-
+    return (self.first_name + " " + self.last_name)  
