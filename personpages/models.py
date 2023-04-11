@@ -1,6 +1,5 @@
 # In this file we created our Model, MissingPerson, and the necessary fields for the Missing Person
 
-
 from django.db import models
 from datetime import datetime
 
@@ -14,6 +13,8 @@ class MissingPerson (models.Model) :
     state = models.CharField(max_length=5)
     gender = models.CharField(max_length=5)
     race = models.CharField(max_length=5)
+    class Meta:
+        db_table = 'MissingTable'
 def full_name(self):
     return '%s %s' % (self.first_name, self.last_name)
 def __str__(self):
