@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+# Parker Watts, Caroline Conley, Adam Trommlitz, Baylee Elbakri, Matt Beckstrand, and Jack Kelly's final project
+# The goal of this project is for you to design and implement a website that will help the BYU community 
+# learn about and engage with combatting human trafficking.
 
 from pathlib import Path
 import os
@@ -30,7 +33,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# We added the necessary app to link to our personpages app
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -53,6 +56,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'missingpersons.urls'
 
+# added the necessary code to make the root file to access templates "templates"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -74,7 +78,7 @@ WSGI_APPLICATION = 'missingpersons.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+# update the data base with the proper name and password
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -124,6 +128,7 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# add the proper code to access the static files
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [

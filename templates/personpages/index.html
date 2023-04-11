@@ -1,3 +1,5 @@
+<!-- This is our landing page that has information about Human Trafficking and what we can do about it. -->
+<!-- We inherit from the base file. -->
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
@@ -30,15 +32,16 @@
         <h2 style="text-align: center;">Human Trafficking in Utah</h2>
         <p style="text-align: center;"> With Utah geographically positioned at the crossroads of the west, thousands of victims are suspected to be moved through our state, with hundreds victimized within the state. In fact, Utah is in the top 10 states for reported human trafficking cases. Over 50% of identified girl victims in Utah are aged between 15 and 17 while about 40% of trafficked boys are under 12 years of age. Although every person, no matter age, it important, this project will only use those statistics for providing JSON data Missing Persons Cases Found ages 0 to 27 in the state of Utah. </p>
         <br>
-        <div style="text-align: center;">
-        <form method="post" action="{% url 'data' %}">
-            {% csrf_token %}
-            <button type="submit">Click Here to see the Missing Persons Data</button>
-        </form>
+        <!-- Button that takes you to the page with the data-->
+        <div class="text-center">
+            <form method="post" action="{% url 'data' %}">
+              {% csrf_token %}
+              <button class="btn btn-primary" type="submit">Click Here to See the Missing Persons Data</button>
+            </form>
+          </div>
         </div>
         <br> <br>
         <h2 style="text-align: center;">What we can do to Help</h2>
         <p style="text-align: center;">If you suspect human trafficking or are a victim of human trafficking, it is important to seek help from appropriate authorities and service providers. You can contact the National Human Trafficking Hotline at 1-888-373-7888 or the Utah Hotline 801-200-3443 for help or report suspicious activity to local law enforcement. It is crucial to prioritize the safety and well-being of potential victims and take steps to combat human trafficking in Utah and beyond.</p>
-        <!--click this button to take you to the most recent cases in utah -->
-        <!--click this button to learn more of what you can do -->
+
 {% endblock %}

@@ -1,3 +1,6 @@
+# In this file we created our Model, MissingPerson, and the necessary fields for the Missing Person
+
+
 from django.db import models
 from datetime import datetime
 
