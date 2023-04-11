@@ -1,37 +1,104 @@
-{% extends 'base.html' %}
-{% block content %}
 {% load static %}
-<!-- Page Header-->
-<header class="masthead" style="background-image: url('{% static 'img/about-bg.jpg' %}')">
-    <div class="container position-relative px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="page-heading">
-                    <h1 style="color: black; font-size: 75px;">About</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="{% url 'index' %}">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'about' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'analysis' %}">Sample Post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</header>
-<!-- Main Content-->
-<main class="mb-4">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <br>
-                <p style="color: black; text-align: center; font-size: 50px; font-weight: bold;">Meet the Team</p>
-                <p style="text-align: center; font-size: 20px;"> Adam Trommlitz <br>
-                    Caroline Conley <br>
-                    Matt Beckstrand <br>
-                    Jack Kelly <br>
-                    Parker Watts <br>
-                    Baylee El-Bakhri<br>
-                </p>
-                
-                <h2 style="color: black; text-align: center;">Why we created our project</h2>
-                <p> We are group of Information Systems students that wanted to build a website aimed at raising awareness for human trafficking. As a team, we recognized the immense scale of human trafficking as a crime that affects millions of people worldwide. We were deeply motivated to take action against this heinous crime and make a meaningful difference. Our website aims to educate others about the issue and encourage people to take action against human trafficking. Through this project, we hope to inspire others to get involved and use technology to promote social justice and create positive change in the world.</p>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static 'img/about-bg.jpg' %}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>A Description of Human Trafficking</h1>
+                            <span class="subheading">Utah, The United States, and Worldwide</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</main>
-{% endblock %}
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Human trafficking is a heinous crime that affects millions of people worldwide, and Utah is no exception. In fact, due to its geographic location and status as a transportation hub, Utah is considered a major hub for human trafficking. Victims of human trafficking are often forced into prostitution, labor, and other forms of exploitation. It is a form of modern-day slavery that robs individuals of their basic human rights and dignity.</p>
+                        <p>In the United States, human trafficking is a growing problem, with an estimated 25 million people trafficked worldwide. It is a complex issue that requires a comprehensive approach to address its root causes. Prevention efforts, such as educating the public on the signs of trafficking and providing support for at-risk populations, are crucial in combating this issue. Additionally, law enforcement efforts to identify and prosecute traffickers must be increased to hold perpetrators accountable and provide justice for victims.</p>
+                        <p>Despite the scale of the problem, there is hope for ending human trafficking. By working together and taking concrete steps to prevent, identify, and address trafficking, we can make a difference. It is up to all of us to take action and support organizations working to end human trafficking, both in our local communities and around the world. Through education, awareness, and advocacy, we can create a world where human trafficking is no longer a reality.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
