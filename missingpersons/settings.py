@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 # Parker Watts, Caroline Conley, Adam Trommlitz, Baylee Elbakri, Matt Beckstrand, and Jack Kelly's final project
-# The goal of this project is for you to design and implement a website that will help the BYU community 
+# Description: The goal of this project is for you to design and implement a website that will help the BYU community 
 # learn about and engage with combatting human trafficking.
 
 from pathlib import Path
