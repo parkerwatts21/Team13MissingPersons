@@ -1,4 +1,4 @@
-# In this file we created new view functions that render our HTML templates. 
+# In this file we created new view functions that render our HTML templates and imported render and model. 
 
 from django.shortcuts import render
 from django.http import HttpResponse
