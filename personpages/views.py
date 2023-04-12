@@ -21,5 +21,9 @@ def dataPageView(request) :
     }
     return render(request, 'personpages/data.html', context)
 
-def displayPageView(request) :
-    return render(request, 'personpages/display.html')
+def detailPageView(request, id) :
+    person = MissingPerson.objects.get(id=id)
+    context = {
+        "data" : person
+    }
+    return render(request,'personpages/detailPage.html', context)

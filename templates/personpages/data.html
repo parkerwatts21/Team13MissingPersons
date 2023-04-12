@@ -35,6 +35,7 @@
                     <th>State</th>
                     <th>Gender</th>
                     <th>Race</th>
+                    <th>More Info</th>
                 </tr>
                 {% for oMissingPerson in data %}
                 <tr>
@@ -46,6 +47,7 @@
                     <td>{{oMissingPerson.state}}</td>
                     <td>{{oMissingPerson.gender}}</td>
                     <td>{{oMissingPerson.race}}</td>
+                    <td><a href="{% url 'detailPage' id=oMissingPerson.id %}" style="color: white;">Details</a></td>   
                 </tr>
                 {% endfor %}
             </table>
