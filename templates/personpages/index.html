@@ -105,6 +105,13 @@
                     </div>
                 </div>
             </div>
+    <!-- Button that takes you to the page with the data-->
+    <div style="padding-right: 160px; padding-left: 130px; padding-top: 75px;" class="text-center">
+    <form method="post" action="{% url 'data' %}">
+    {% csrf_token %}
+    <button class="btn btn-primary" type="submit">Click Here to See the Missing Persons Data</button>
+    </form>  
+    </div>
         </section>
     <footer class="border-top">
         <div class="container px-4 px-lg-5">
