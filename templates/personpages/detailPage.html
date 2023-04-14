@@ -20,7 +20,29 @@
         <div class="col-md-10 col-lg-8 col-xl-7" style = "text-align: center;">
             <h1>Display Data</h1>
             <div class="my-5">
-                <p>{{data.first_name}} {{data.last_name}} went missing on {{data.date_missing}} in {{data.city}}, {{data.state}} at the age of {{data.age_at_missing}}.</p>
+        <form>
+            <label>Name</label>
+            <input type="text" value="{{data.first_name}} {{data.last_name}}">   
+            <br> 
+            <label>Date Missing</label>
+            <input type="text" value="{{data.date_missing}}">
+            <br> 
+            <label>City</label>
+            <input type="text" value="{{data.city}}">
+            <br> 
+            <label>State</label>
+            <input type="text" value="{{data.state}}">
+            <br> 
+            <label>Age at Missing</label>
+            <input type="text" value="{{data.age_at_missing}}">
+            <br> 
+            <label>Gender</label>
+            <input type="text" value="{{data.gender}}">
+            <br> 
+            <label>Race</label>
+            <input type="text" value="{{data.race}}">
+        </form>    
+        
             </div>
         </div>
     </div>
