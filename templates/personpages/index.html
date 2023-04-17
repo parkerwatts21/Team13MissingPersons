@@ -5,13 +5,12 @@
 {% load static %}
 <link href="{% static 'css/homestyles.css' %}" rel="stylesheet" />
  <!-- Page Header-->
- <header class="masthead" style="background-image: url('{% static 'img/mainimg.jpg' %}')">
+ <header style="height: 800px; position: background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('{% static 'img/mainimg.jpg' %}')" >
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1 class="text-uppercase">Human Trafficking</h1>
-                    <h5 class="subheading">Learn More and Join the Fight</h5>
+                    <h1 style="text-align: center; padding-top: 100px" class="mx-auto my-0 text-uppercase">Human Trafficking</h1>
                 </div>
             </div>
         </div>
@@ -19,12 +18,12 @@
 </header>
 <!-- Main Content: This explains human trafficking and the gives important deatils on what we can do to educate ourselves and combat it. -->
 <!-- About-->
-<section class="text-center bg-light" id="about">
+<section style="padding-top: 45px"class="text-center bg-light" id="about">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
                 <h2 class="mb-4"><h2>What is Human Trafficking?</h2></h2>
-                <p>Human trafficking is a crime that exploits and coerces individuals, often for forced labor or sexual exploitation. It's a modern form of slavery affecting millions globally, including women, men, and children. It's a $32 billion per year industry, ranking second to drug trafficking as the most profitable transnational crime.</p>
+                <p class="text-black-50 mb-0">Human trafficking is a crime that exploits and coerces individuals, often for forced labor or sexual exploitation. It's a modern form of slavery affecting millions globally, including women, men, and children. It's a $32 billion per year industry, ranking second to drug trafficking as the most profitable transnational crime.</p>
             </div>
         </div>
     </div>
@@ -76,6 +75,7 @@
     <!-- Button that takes you to the page with the data-->
     <div style="padding-top: 75px;" class="text-center">
         <form method="post" action="{% url 'data' %}">
+            {% csrf_token %}
             <button class="btn btn-primary" type="submit">Click Here to See the Missing Persons Data</button>
         </form>  
     </div>
