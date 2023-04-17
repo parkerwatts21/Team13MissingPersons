@@ -3,7 +3,8 @@
 from django.db import models
 from datetime import datetime
 
-# Create your models here.
+# Create your models here. Has the missing person model of each of the attributes. 
+# Also has the __str__ to display first and last name in the admin page
 class MissingPerson (models.Model) :
     date_missing = models.DateField(default = datetime.today)
     last_name = models.CharField(max_length=30)

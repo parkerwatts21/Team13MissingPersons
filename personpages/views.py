@@ -14,12 +14,16 @@ def indexPageView(request) :
 def aboutPageView(request) :
     return render(request, 'personpages/about.html')
 
+# This returns the missing persons data from the database to be displayed on the data page
+
 def dataPageView(request) :
     db_persons = MissingPerson.objects.all()
     context = {
         "data" : db_persons
     }
     return render(request, 'personpages/data.html', context)
+
+# This returns a missing persons specific data with their given id
 
 def detailPageView(request, id) :
     person = MissingPerson.objects.get(id=id)
