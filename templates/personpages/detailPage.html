@@ -1,3 +1,5 @@
+<!--This is our detail page that when you click on "Details" next to each missing person it 
+will take you to this page that displays that persons details in a form-->
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
@@ -22,7 +24,7 @@
     <!-- Learn More: https://formbold.com -->
     <div class="formbold-form-wrapper">
       
-      
+      <!--This is the start of our form-->
       <form action="https://formbold.com/s/FORM_ID" method="POST">
         <div class="formbold-form-title">
           <h2 class="">Details</h2>
@@ -32,9 +34,11 @@
   
         <div class="formbold-input-flex">
           <div>
+            <!-- Make sure to label each form -->
             <label for="firstname" class="formbold-form-label">
               First name
             </label>
+            <!--Add an input to each form -->
             <input
               type="text"
               value="{{data.first_name}}"
@@ -42,7 +46,9 @@
             />
           </div>
           <div>
+            <!-- Make sure to label each form -->
             <label for="lastname" class="formbold-form-label"> Last name </label>
+            <!--Add an input to each form -->
             <input
               type="text"
              value="{{data.last_name}}"
@@ -53,7 +59,9 @@
   
         <div class="formbold-input-flex">
           <div>
+            <!-- Make sure to label each form -->
             <label for="datemissing" class="formbold-form-label"> Date Missing </label>
+            <!--Add an input to each form -->
             <input
               type="text"
               value="{{data.date_missing}}"
@@ -61,7 +69,9 @@
             />
           </div>
           <div>
+            <!-- Make sure to label each form -->
             <label for="phone" class="formbold-form-label">City</label>
+            <!--Add an input to each form -->
             <input
               type="text"
               value="{{data.city}}"
@@ -72,7 +82,9 @@
   
         <div class="formbold-input-flex">
           <div>
+            <!-- Make sure to label each form -->
             <label for="state" class="formbold-form-label"> State </label>
+            <!--Add an input to each form -->
             <input
               type="text"
               value="{{data.state}}"
@@ -80,7 +92,9 @@
             />
           </div>
           <div>
+            <!-- Make sure to label each form -->
             <label for="country" class="formbold-form-label"> Age at Missing </label>
+            <!--Add an input to each form -->
             <input
               type="text"
               value="{{data.age_at_missing}}"
@@ -91,6 +105,7 @@
   
         <div class="formbold-input-flex">
           <div>
+            <!-- Make sure to label each form -->
             <label for="post" class="formbold-form-label"> Gender</label>
             <input
               type="text"
@@ -99,6 +114,7 @@
             />
           </div>
           <div>
+            <!-- Make sure to label each form -->
             <label for="area" class="formbold-form-label"> Race</label>
             <input
               type="text"
