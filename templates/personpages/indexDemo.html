@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Missing Persons</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!--link the css files and add static -->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/homestyles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation and link the route names to the proper buttons-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a style="color: white;"class="navbar-brand" href="{% url 'index' %}">Join the Fight</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'about' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'data' %}">Data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" style="background-image: url('{% static 'img/mainimg.jpg' %}')">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 style="padding-right: 160px; padding-left: 130px; padding-bottom: 75px;"  class="mx-auto my-0 text-uppercase">Human Trafficking</h1>
+                        <a class="btn btn-primary" href="{% url 'about' %}">About our Team</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4"><h2>What is Human Trafficking?</h2></h2>
+                        <p class="text-white-50">
+                            Human trafficking is a crime that exploits and coerces individuals, often for forced labor or sexual exploitation. It's a modern form of slavery affecting millions globally, including women, men, and children. It's a $32 billion per year industry, ranking second to drug trafficking as the most profitable transnational crime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7">
+                    <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/BackgroundHT.jpeg' %}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>How does Human Trafficking Happen?</h4>
+                            <p class="text-black-50 mb-0">Human trafficking is exploitation that happens within or across borders. Victims are deceived or coerced into vulnerable situations such as false job offers or marriage proposals. Traffickers use abuse, threats, and coercion to maintain control and prevent escape.</p>
+                        </div>
+                    </div>
+                </div>
+                <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %} " alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Human Trafficking in Utah</h4>
+                                    <p class="mb-0 text-white-50">Utah, located at a major western crossroads, is a suspected transit and victimization point for thousands of human trafficking victims. It ranks in the top 10 states for reported cases. Girls aged 15-17 constitute over 50% of identified victims, while boys under 12 account for about 40%. This project will focus on using these statistics for JSON data on missing persons cases found, aged 0-27, in Utah.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src=" {% static 'img/demo-image-02.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">What we can do to Help</h4>
+                                    <p class="mb-0 text-white-50">If you suspect human trafficking or are a victim of human trafficking, it is important to seek help from appropriate authorities and service providers. You can contact the National Human Trafficking Hotline at 1-888-373-7888 or the Utah Hotline 801-200-3443 for help or report suspicious activity to local law enforcement. It is crucial to prioritize the safety and well-being of potential victims and take steps to combat human trafficking in Utah and beyond.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Button that takes you to the page with the data-->
+    <div style="padding-right: 160px; padding-left: 130px; padding-top: 75px;" class="text-center">
+    <form method="post" action="{% url 'data' %}">
+    {% csrf_token %}
+    <button class="btn btn-primary" type="submit">Click Here to See the Missing Persons Data</button>
+    </form>  
+    </div>
+        </section>
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/watch?v=DWoHgIoLCPg" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.byu.edu/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" target="_blank">
+                            <a href="https://github.com/parkerwatts21/Team13MissingPersons.git">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; Team 13's Website 2023</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

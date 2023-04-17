@@ -3781,6 +3781,10 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
   border-bottom: 0;
 }
+.card-header-tabs .nav-link.active {
+  background-color: var(--bs-card-bg);
+  border-bottom-color: var(--bs-card-bg);
+}
 
 .card-header-pills {
   margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));
@@ -7182,11 +7186,6 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem !important;
 }
 
-.my-5 {
-  margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
-}
-
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
@@ -7266,10 +7265,6 @@ textarea.form-control-lg {
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
-}
-
-.mb-5 {
-  margin-bottom: 3rem !important;
 }
 
 .mb-auto {
@@ -8138,10 +8133,7 @@ textarea.form-control-lg {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
-  .my-sm-5 {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
-  }
+
   .my-sm-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -8202,9 +8194,6 @@ textarea.form-control-lg {
   }
   .mb-sm-4 {
     margin-bottom: 1.5rem !important;
-  }
-  .mb-sm-5 {
-    margin-bottom: 3rem !important;
   }
   .mb-sm-auto {
     margin-bottom: auto !important;
@@ -8634,10 +8623,6 @@ textarea.form-control-lg {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
-  .my-md-5 {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
-  }
   .my-md-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -8698,9 +8683,6 @@ textarea.form-control-lg {
   }
   .mb-md-4 {
     margin-bottom: 1.5rem !important;
-  }
-  .mb-md-5 {
-    margin-bottom: 3rem !important;
   }
   .mb-md-auto {
     margin-bottom: auto !important;
@@ -9130,10 +9112,7 @@ textarea.form-control-lg {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
-  .my-lg-5 {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
-  }
+ 
   .my-lg-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -9194,9 +9173,6 @@ textarea.form-control-lg {
   }
   .mb-lg-4 {
     margin-bottom: 1.5rem !important;
-  }
-  .mb-lg-5 {
-    margin-bottom: 3rem !important;
   }
   .mb-lg-auto {
     margin-bottom: auto !important;
@@ -9626,10 +9602,6 @@ textarea.form-control-lg {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
-  .my-xl-5 {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
-  }
   .my-xl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -9691,9 +9663,7 @@ textarea.form-control-lg {
   .mb-xl-4 {
     margin-bottom: 1.5rem !important;
   }
-  .mb-xl-5 {
-    margin-bottom: 3rem !important;
-  }
+
   .mb-xl-auto {
     margin-bottom: auto !important;
   }
@@ -10122,10 +10092,7 @@ textarea.form-control-lg {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
-  .my-xxl-5 {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
-  }
+
   .my-xxl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -10186,9 +10153,6 @@ textarea.form-control-lg {
   }
   .mb-xxl-4 {
     margin-bottom: 1.5rem !important;
-  }
-  .mb-xxl-5 {
-    margin-bottom: 3rem !important;
   }
   .mb-xxl-auto {
     margin-bottom: auto !important;
@@ -10442,54 +10406,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
-}
-
-.masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-.masthead h2, .masthead .h2 {
-  max-width: 20rem;
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .masthead h2, .masthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
-  }
 }
 
 .about-section {
